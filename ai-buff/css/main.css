@@ -278,6 +278,10 @@
   transition: transform 0.3s ease;
 }
 
+.section-02 .section-container .quick-menu .title.mo {
+  display: none;
+}
+
 .section-02 .section-container .quick-menu .quick-menu-item:hover .title {
   transform: translateY(-20px);
 }
@@ -288,6 +292,7 @@
   line-height: 1.25;
   color: #314158;
   text-align: center;
+  word-break: keep-all;
 }
 
 .section-02 .section-container .quick-menu .quick-menu-item .description strong {
@@ -944,7 +949,7 @@
   margin-top: 100px;
   margin-left: 0;
   padding-block: 40px 0;
-  width: 67.3%;
+  width: 100%;
   border-radius: 24px;
   background: #E9E9E9;
 }
@@ -956,7 +961,7 @@
   display: grid;
   grid-template-columns: 12.3fr 22fr 22fr;
   padding-inline: 70px 0;
-  width: 90%;
+  width: 60%;
   color: #000000;
   text-align: center;
   opacity: 1;
@@ -972,7 +977,7 @@
   gap: 0;
   padding-block: 50px;
   padding-inline: 70px 0;
-  width: 90%;
+  width: 60%;
   color: rgba(0, 0, 0, 0.50);
   border-bottom: 1px solid #CAD5E2;
   text-align: center;
@@ -1001,7 +1006,7 @@
   background: linear-gradient(170deg, #8A34EF 7.78%, #ACE6FF 26.67%, #9941FF 47.32%, #C4EDFF 75%, #4F1E89 99.16%);
   box-shadow: 0 0 40px 0 rgba(138, 52, 239, 0.20);
   transform: translate3d(0, -50%, 0);
-  opacity: 1;
+  opacity: 0;
 }
 
 .section-05-mobile .mobile-special-content .special-row .content {
@@ -1271,6 +1276,10 @@
   height: 100%;
 }
 
+.section-07 .section-07-swiper {
+  padding: 10px;
+}
+
 .section-07 .section-container .carousel .carousel-wrapper .card .card-background .mobile {
   display: none;
 }
@@ -1379,9 +1388,10 @@
 .section-07 .section-container .carousel .carousel-wrapper .card {
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 630px;
   border-radius: 40px;
   background: linear-gradient(0deg, rgba(138, 52, 239, 0.04) 0%, rgba(138, 52, 239, 0.04) 100%), #FFF;
+  box-shadow: 0 0 8.533px 0 rgba(138, 52, 239, 0.20);
 }
 
 .section-07 .section-container .carousel .carousel-wrapper .card-01 {
@@ -1534,9 +1544,11 @@
 .section-07 .section-container .carousel .carousel-wrapper .card-02 img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .section-07 .section-container .carousel .carousel-wrapper .card-02 .answer {
@@ -1544,7 +1556,7 @@
   font-weight: 700;
   line-height: 1.25;
   position: absolute;
-  bottom: 60px;
+  bottom: 45px;
   left: 50%;
   width: fit-content;
   transform: translateX(-50%);
@@ -1597,7 +1609,7 @@
 .section-07 .section-container .carousel .carousel-wrapper .card-03 img {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 52%;
 }
 
 .section-07 .section-container .carousel .carousel-wrapper .card-03 img.mobile {
@@ -1645,8 +1657,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-top: 57px;
+  gap: 28px;
+  margin-top: 25px;
   margin-left: 63px;
   padding-left: 17px;
 }
@@ -2835,7 +2847,7 @@
     margin-top: 4.5vw;
     margin-left: 0;
     padding-block: 5vw 0;
-    width: 70%;
+    width: 100%;
     border-radius: 2.3vw;
     background: #E9E9E9;
   }
@@ -2847,7 +2859,7 @@
     display: grid;
     grid-template-columns: 12.3fr 22fr 22fr;
     padding-inline: 6vw 0;
-    width: 90%;
+    width: 63%;
     color: #000000;
     text-align: center;
   }
@@ -2862,7 +2874,7 @@
     gap: 0;
     padding-block: 3.4vw;
     padding-inline: 6vw 0;
-    width: 90%;
+    width: 63%;
     color: rgba(0, 0, 0, 0.50);
     border-bottom: 1px solid #CAD5E2;
   }
@@ -3230,7 +3242,7 @@
   .section-07 .section-container .carousel .carousel-wrapper .card {
     position: relative;
     width: 100%;
-    height: 50vw;
+    height: 47vw;
     border-radius: 2.7vw;
     background: linear-gradient(0deg, rgba(138, 52, 239, 0.04) 0%, rgba(138, 52, 239, 0.04) 100%), #FFF;
   }
@@ -3379,7 +3391,7 @@
     left: 50%;
     display: block;
     width: auto;
-    height: 90%;
+    height: 100%;
     transform: translate3d(-50%, 0, 0);
   }
 
@@ -3388,7 +3400,7 @@
     font-weight: 700;
     line-height: 1.25;
     position: absolute;
-    bottom: 60px;
+    bottom: 45px;
     left: 50%;
     width: fit-content;
     transform: translateX(-50%);
@@ -3490,7 +3502,7 @@
     display: flex;
     flex-direction: column;
     gap: 3vw;
-    margin-top: 3.3vw;
+    margin-top: 2.3vw;
     margin-left: 4.3vw;
     padding-left: 1.6vw;
   }
@@ -3886,15 +3898,17 @@
   .section-02 .section-container .quick-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.2vw;
+    gap: 6vw 3.2vw;
     padding-inline: 3.2vw;
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item {
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2.1vw;
-    height: 23vw;
+    padding:2.1vw 4.1vw 4.1vw;
+    /* height: 23vw; */
+    height: auto;
+    border-radius: 40px;
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item::before {
@@ -3931,11 +3945,12 @@
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item .icon {
-    position: absolute;
-    top: 2.1vw;
-    right: 2.1vw;
-    width: 8vw;
+    position: relative;
+    /* top: 2.1vw; */
+    /* right: 2.1vw; */
+    width: 17vw;
     transition: none;
+    margin: 0 auto 1.5vw;
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item:hover .icon {
@@ -3949,6 +3964,16 @@
     color: #0F172B;
     transition: none;
     text-align: start;
+    display: none;
+  }
+
+  .section-02 .section-container .quick-menu .title.mo {
+    display: block;
+    font-size: 3.7vw;
+    font-weight: 600;
+    color: #0F172B;
+    text-align: center;
+    margin-top: 2.5vw;
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item:hover .title {
@@ -3956,15 +3981,16 @@
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item .description {
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: 400;
     line-height: 1.25;
     color: #314158;
-    text-align: start;
+    text-align: center;
+    width: 100%;
   }
 
   .section-02 .section-container .quick-menu .quick-menu-item .description strong {
-    font-size: 3.5vw;
+    font-size: 3vw;
     display: block;
   }
 
@@ -4266,7 +4292,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 25vw;
+    padding-top: 30vw;
     height: 105vw;
     max-height: unset;
     border: 0;
@@ -4307,29 +4333,48 @@
     border-bottom-left-radius: 3.2vw;
   }
 
+  .section-05 .section-container .carousel-wrapper .carousel-item .right-content .content-title-group {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 6.4vw);
+    height: 30vw;
+    transform: translateX(-50%);
+    background: #8A34EF;
+    border-top-right-radius: 3.2vw;
+    border-top-left-radius: 3.2vw;
+  }
+
   .section-05 .section-container .carousel-wrapper .carousel-item .right-content .content-title {
     font-family: "210 Luckysuper", Pretendard, serif;
     font-size: 4.4vw;
     font-weight: 400;
     line-height: 1.25;
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 100%;
-    color: #8A34EF;
-    transform: translateX(-50%);
+    color: #FFFFFF;
     text-align: center;
   }
 
   .section-05 .section-container .carousel-wrapper .carousel-item .right-content .content-title strong {
     font-family: "210 Luckysuper", Pretendard, serif;
     font-size: 6.4vw;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.25;
     display: block;
-    color: #8A34EF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #F8FAFC;
+    color:#FFFFFF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8A34EF;
+  }
+
+  .section-05 .section-container .carousel-wrapper .carousel-item.item-01 .right-content .content-title {
+    top: 35px;
+  }
+
+  .section-05 .section-container .carousel-wrapper .item-03 .right-content .content-title:last-of-type strong {
+    font-size: 6.4vw;
   }
 
   .section-05 .section-container .carousel-wrapper .carousel-item .right-content ul {
@@ -4406,9 +4451,9 @@
 
   .section-05-mobile .mobile-special-content .table {
     position: relative;
-    margin-left: 3.2vw;
+    margin-inline: 3.2vw;
     padding-block: 2.7vw 0;
-    width: 60%;
+    width: calc(100% - 6.4vw);
     border-radius: 4.2vw;
     background: #E9E9E9;
   }
@@ -4419,7 +4464,7 @@
     line-height: 1;
     display: grid;
     grid-template-columns: 2.2fr 3.9fr 3.9fr;
-    width: 90%;
+    width: 54%;
     color: #000000;
     text-align: center;
     opacity: 1;
@@ -4435,7 +4480,7 @@
     gap: 2.7vw;
     padding-block: 8vw;
     padding-inline: 2.7vw;
-    width: 90%;
+    width: 54%;
     color: rgba(0, 0, 0, 0.50);
     border-bottom: 1px solid #CAD5E2;
     text-align: center;
@@ -4468,7 +4513,6 @@
     background: linear-gradient(170deg, #8A34EF 7.78%, #ACE6FF 26.67%, #9941FF 47.32%, #C4EDFF 75%, #4F1E89 99.16%);
     box-shadow: 0 0 40px 0 rgba(138, 52, 239, 0.20);
     transform: translate3d(-3.2vw, -50%, 0);
-    opacity: 1;
   }
 
   .section-05-mobile .mobile-special-content .special-row .content {
@@ -4524,8 +4568,9 @@
 
   .section-05-mobile .mobile-special-content .special-row p strong {
     display: block;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    white-space: pre-wrap;
   }
 
   .section-05 .section-container .carousel-wrapper .item-01 .mobile-left-content {
@@ -4544,7 +4589,7 @@
     position: relative;
     display: flex;
     width: calc(100% - 6.4vw);
-    height: 42vw;
+    height: 100%;
     justify-content: center;
     align-items: center;
     background: #F3F6F8;
@@ -4554,7 +4599,7 @@
 
   .section-05 .section-container .carousel-wrapper .item-01 .mobile-left-content img {
     display: block;
-    width: 73vw;
+    width: 65vw;
   }
 
   .section-05 .section-container .carousel-wrapper .item-02 {
@@ -4586,17 +4631,6 @@
     width: 40%;
   }
 
-  .section-05 .section-container .carousel-wrapper .item-02 .right-content .content-title-group {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(-50%);
-  }
-
   .section-05 .section-container .carousel-wrapper .item-02 .right-content .content-title-group .content-title {
     position: relative;
     display: flex;
@@ -4605,7 +4639,7 @@
 
   .section-05 .section-container .carousel-wrapper .item-02 .right-content .content-title:nth-of-type(2) {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 4px;
   }
 
@@ -4642,18 +4676,6 @@
     width: 40%;
   }
 
-  .section-05 .section-container .carousel-wrapper .item-03 .right-content .content-title-group {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    width: 100%;
-  }
-
   .section-05 .section-container .carousel-wrapper .item-03 .right-content .content-title-group .content-title {
     position: relative;
     display: flex;
@@ -4664,7 +4686,7 @@
 
   .section-05 .section-container .carousel-wrapper .item-03 .right-content .content-title:last-of-type {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 4px;
   }
 
@@ -4874,7 +4896,11 @@
     margin-top: 20vw;
     padding-top: 0;
     height: 100%;
-    max-height: 100vh;
+    /* max-height: 100vh; */
+  }
+
+  .section-07 .section-07-swiper {
+    padding: 10px 35px;
   }
 
   .section-07 .section-container {
@@ -4947,7 +4973,7 @@
 
   .section-07 .section-container .carousel .carousel-wrapper .card {
     position: relative;
-    padding-inline: 2.7vw;
+    /* padding-inline: 2.7vw; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -4965,6 +4991,15 @@
   .section-07 .section-container .carousel .carousel-wrapper .card .card-background .mobile {
     display: block;
     width: 90%;
+  }
+
+  .section-07 .section-container .carousel .carousel-wrapper .card-02 .card-background .mobile {
+    position: relative;
+    left: inherit;
+    transform: initial;
+    top: 7%;
+    margin: 0 auto;
+    height: auto;
   }
 
   .section-07 .section-container .carousel .carousel-wrapper .card .card-background .pc {
@@ -5171,7 +5206,7 @@
     display: flex;
     flex-direction: column;
     gap: 9vw;
-    margin-top: 22vw;
+    margin-top: 9vw;
     margin-left: 7.7vw;
     padding-left: 3.2vw;
   }
@@ -5262,7 +5297,7 @@
 
   .section-08 .section-container {
     display: flex;
-    padding-top: 25vw;
+    padding-top: 15vw;
     padding-inline: 0;
   }
 
